@@ -1,9 +1,131 @@
+<!DOCTYPE html>
 <html>
-
-<body>
-  <h1>Joey</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
-
+  <head>
+    <title>Website Style Guide</title>
+    <link href="./styles.css" rel="stylesheet" />
+    <!--Imports Google Font delius-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Website Style Guide</h1>
+    </header>
+    <section class="colors">
+      <h2>Colors</h2>
+      <ul>
+        <li class="deep-orange">Deep Orange<br>
+          <code>hsl(32, 100%, 49%)</code>
+        </li>
+        <li class="sunny-yellow">Sunny Yellow<br>
+          <code>hsl(43, 100%, 51%)</code>
+        </li>
+        <li class="dark-blue">Dark Blue<br>
+          <code>hsl(200, 95%, 14%)</code>
+        </li>
+        <li class="playful-blue">Playful Blue<br>
+          <code>hsl(192, 70%, 43%)</code>
+        </li>
+        <li class="light-blue">Light Blue<br>
+          <code>hsl(199, 64%, 73%)</code>
+        </li>
+      </ul>
+    </section>
+    <section class="typeface">
+      <h2>Typefaces</h2>
+      <table>
+        <caption>Table of Font-Families with Samples</caption>
+        <thead>
+          <tr>
+            <th scope="col">Delius</th>
+            <th scope="col">Roboto</th>
+            <th scope="col" class="last-column">Times New Roman</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!--Begins Delius samples-->
+            <td>
+              <p>The quick brown fox<br>jumps over the lazy dog.</p>
+              <p style="font-style: italic;">The quick brown fox<br>jumps over the lazy dog.</p>
+              <p style="font-weight: bold;">The quick brown fox<br>jumps over the lazy dog.</p>
+            </td>
+            <!--Begins Roboto samples-->
+            <td class="roboto-samples">
+              <p>The quick brown fox<br>jumps over the lazy dog.</p>
+              <p style="font-style: italic">The quick brown fox<br>jumps over the lazy dog.</p>
+              <p style="font-weight: bold;">The quick brown fox<br>jumps over the lazy dog.</p>
+            </td>
+            <td class="last-column tnr-samples">
+              <p>The quick brown fox<br>jumps over the lazy dog.</p>
+              <p style="font-style: italic;">The quick brown fox<br>jumps over the lazy dog.</p>
+              <p style="font-weight: bold;">The quick brown fox<br>jumps over the lazy dog.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="text-styles">
+      <h2>Text Styles</h2>
+      <table>
+        <caption>Table of Text Styles and CSS</caption>
+        <thead>
+          <tr>
+            <th scope="col"><h1>H1 Main Heading</h1></th>
+            <th scope="col" class="last-column"><h2>H2 Section Heading</h2></th>
+          </tr>
+          <tr>
+            <td>
+              <!--Begins h1 styles-->
+              <code>
+                text-align: center<br>
+                color: hsl(192, 70%, 43%)<br>
+                font-size: 300%<br>
+                font-weight: bold<br>
+                text-decoration: underline<br>
+              </code>
+            </td>
+            <!--Begins h2 styles-->
+            <td class="last-column">
+              <code>
+                color: hsl(200, 95%, 14%)<br>
+                font-size: 225%<br>
+                font-weight: bold<br>
+                position: relative<br>
+                bottom: -20px<br>
+              </code>
+            </td>
+          </tr>
+        </thead>
+      </table>
+      <table class="p-code">
+        <thead>
+          <tr>
+            <th scope="col">P(aragraph)</th>
+            <th scope="col" class="last-column">Code</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--Begins p styles-->
+          <td>
+            <code>font-family: 'delius'</code>
+          </td>
+          <!--Begins code styles-->
+          <td class="last-column">
+            <code>
+              font-size: 125%
+            </code>
+          </td>
+        </tbody>
+      </table>
+    </section>
+    <footer>
+      <p>Last edited: 16 May, 2025.<br>
+        Designed by Joey.</p>
+    </footer>
+  </body>
 </html>

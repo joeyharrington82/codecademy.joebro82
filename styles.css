@@ -1,0 +1,121 @@
+/* Begins global styling */
+
+html {
+  font-family: 'delius';
+  background-color: rgb(218, 219, 184);
+}
+
+h1 {
+  text-align: center;
+  color: hsl(192, 70%, 43%);
+  font-size: 300%;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+h2 {
+  color: hsl(200, 95%, 14%);
+  font-size: 225%;
+  font-weight: bold;
+  position: relative;
+  bottom: -20px;
+}
+
+/* Begins flexbox setup for the colors section */
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1; /* Makes every flex item the same size */
+  justify-content: center;
+  border: 2px solid black;
+}
+
+li {
+  list-style: none;
+  font-weight: 999;
+  padding: 40px 40px;
+  margin: 10px 10px;
+}
+
+/* Begins color boxes for the colors section */
+
+li.deep-orange {
+  background-color: hsl(32, 100%, 49%);
+}
+
+li.sunny-yellow {
+  background-color: hsl(43, 100%, 51%);
+}
+
+li.dark-blue {
+  background-color: hsl(200, 95%, 14%);
+}
+
+li.playful-blue {
+  background-color: hsl(192, 70%, 43%);
+}
+
+li.light-blue {
+  background-color: hsl(199, 64%, 73%);
+}
+
+.typeface li {
+  color: hsl(192, 70%, 43%);
+}
+
+/* Begins table setup for the typeface, text-styles sections */
+
+table {
+  width: 100%;
+  overflow: scroll;
+  border-collapse: collapse;
+  font-size: 110%;
+  text-align: center;
+}
+
+caption {
+  text-decoration: underline;
+}
+
+th {
+  width: 33%;
+  min-width: 200px;
+  font-weight: bold;
+  text-decoration: underline;
+  border-right: 2px solid black;
+}
+
+td {
+  border-right: 2px solid black;
+}
+
+th.last-column, td.last-column { 
+  border: none;
+}
+
+/* Begins setting respective fonts for typefaces section */
+
+.roboto-samples p {
+  font-family: roboto;
+}
+
+.tnr-samples p {
+  font-family: "Times New Roman";
+}
+
+/* Begins the text styles section */
+
+code {
+  font-size: 125%;
+  background-color: rgba(219, 216, 216, 0.836);
+}
+
+.p-code th, td {
+  padding: 10px;
+}
+
+footer p {
+  margin: 60px;
+  border-top: 2px solid black;
+}
